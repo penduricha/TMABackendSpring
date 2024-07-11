@@ -1,13 +1,11 @@
 package com.example.springWeekTwo.controllers;
 
-import com.example.springWeekTwo.database.DatabaseConfiguration;
 import com.example.springWeekTwo.models.Customer;
-import com.example.springWeekTwo.services.CustomerService;
+import com.example.springWeekTwo.services.demploy.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.orm.jpa.JpaSystemException;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

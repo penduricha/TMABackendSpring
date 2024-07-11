@@ -14,8 +14,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Table(name = "customer", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"email"}),
-        @UniqueConstraint(columnNames = {"phoneNumber"})
+
 })
+// @UniqueConstraint(columnNames = {"phoneNumber"})
 public class Customer implements Serializable {
     @Id
     //@GeneratedValue(strategy = GenerationType.AUTO)
@@ -32,7 +33,7 @@ public class Customer implements Serializable {
     @Column(columnDefinition = "varchar(15)", nullable=false)
     private String phoneNumber;
 
-    @Column(columnDefinition = "varchar(100)", nullable=false)
+    @Column(columnDefinition = "varchar(200)", nullable=false)
     private String password;
 
     @Column(columnDefinition = "varchar(30)", nullable=false)

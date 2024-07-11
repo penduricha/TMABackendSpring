@@ -1,7 +1,7 @@
 package com.example.springWeekTwo.controllers;
 
 import com.example.springWeekTwo.models.Customer;
-import com.example.springWeekTwo.services.CustomerService;
+import com.example.springWeekTwo.services.demploy.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.jpa.JpaObjectRetrievalFailureException;
 import org.springframework.web.bind.annotation.RequestMapping;
